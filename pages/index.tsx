@@ -1,20 +1,18 @@
 import type { NextPage } from 'next';
-
-import { useState } from 'react';
 import Header from './Header';
 import Intro from './Intro';
+import About from './About';
 
-import { Container } from './styles';
+import { Wrapper } from './styles';
 
-const Home: NextPage = () => {
-  const [section, setSection] = useState(1);
-
-  return (
-    <Container>
-      <Header />
-      {section === 1 && <Intro />}
-    </Container>
-  );
-};
+const Home: NextPage = () => (
+  <Wrapper>
+    <Header />
+    <div>
+      <Intro />
+      <About />
+    </div>
+  </Wrapper>
+);
 
 export default Home;

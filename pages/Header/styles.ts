@@ -5,17 +5,24 @@ export const Container = styled.header`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 2rem;
+    width: 100%;
+    padding: 2rem;
+    position: fixed;
+    background-color: #fff;
+    max-width: 1100px;
   }
 
   > .icons {
     display: flex;
     flex-direction: column;
+    align-items: flex-end;
     gap: 4.5rem;
     font-size: 20px;
-    position: absolute;
-    right: 2rem;
-    bottom: 0;
+    position: fixed;
+    width: 100%;
+    padding: 2rem;
+    max-width: 1100px;
+    bottom: 4rem;
   }
 `;
 

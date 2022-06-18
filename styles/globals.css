@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;800&display=swap');
 
 html,
-body,
-button {
+body {
   padding: 0;
   margin: 0;
   font-family: 'Nunito', sans-serif;
@@ -37,4 +36,5 @@ button {
   padding: 0.5rem 2rem;
   transition: 0.3s;
   cursor: pointer;
+  font-family: 'Nunito', sans-serif;
 }
