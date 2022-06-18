@@ -1,13 +1,11 @@
 import type { NextPage } from 'next';
 
-import Header from './Header';
-
 import { Container } from './styles';
 
-const Home: NextPage = () => (
+const Header: NextPage = () => (
   <Container>
-    <Header />
+    <span>Header</span>
   </Container>
 );
 
-export default Home;
+export default Header;
