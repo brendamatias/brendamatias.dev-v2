@@ -37,7 +37,7 @@ export const Container = styled.section`
 `;
 
 export const Content = styled.div`
-  ${({ theme }) => css`
+  ${() => css`
     z-index: 999;
     margin: 0 auto;
     width: 100%;

@@ -16,7 +16,7 @@ const Projects: NextPage = () => (
 
         <strong>sobre o projeto</strong>
         <p>
-          Iam trusted my company in allies and the results have been satisfying because my company has growing. Iam
+          Iam trusted my company in allies and the results have been satisfying because my companyhas growing. Iam
           trusted my company in allies and the results have been satisfying because my company has growing.
         </p>
 

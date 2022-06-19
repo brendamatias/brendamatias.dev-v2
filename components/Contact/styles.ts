@@ -94,7 +94,7 @@ export const Info = styled.div`
 `;
 
 export const Form = styled.form`
-  ${({ theme }) => css`
+  ${() => css`
     > button {
       margin-top: 1.5rem;
       padding: 0.5rem 3rem;

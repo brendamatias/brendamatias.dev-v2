@@ -1,14 +1,12 @@
 import type { NextPage } from 'next';
-import Header from './Header';
-import Intro from './Intro';
-import About from './About';
-import Projects from './Projects';
-import Contact from './Contact';
-
-import { Wrapper } from './styles';
+import Header from '../components/Header';
+import Intro from '../components/Intro';
+import About from '../components/About';
+import Projects from '../components/Projects';
+import Contact from '../components/Contact';
 
 const Home: NextPage = () => (
-  <Wrapper>
+  <main className="main">
     <Header />
     <div>
       <Intro />
@@ -16,7 +14,7 @@ const Home: NextPage = () => (
       <Projects />
       <Contact />
     </div>
-  </Wrapper>
+  </main>
 );
 
 export default Home;

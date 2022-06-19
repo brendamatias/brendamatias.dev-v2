@@ -106,3 +106,12 @@ h2 {
     font-size: 1.5rem !important;
   }
 }
+
+.main {
+  position: relative;
+
+  > div {
+    height: 100vh;
+    color: #222222;
+  }
+}

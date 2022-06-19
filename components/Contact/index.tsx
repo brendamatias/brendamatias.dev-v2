@@ -17,8 +17,8 @@ const Projects: NextPage = () => (
           <h1>que tal começar um projeto juntos?</h1>
 
           <p>
-            Do you want to know more about me or talk about a potential project? Send me an email, even if it's just to
-            say hi!
+            Do you want to know more about me or talk about a potential project? Send me an email, even if it&apos;s
+            just to say hi!
           </p>
         </div>
       </Info>

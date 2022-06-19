@@ -32,18 +32,19 @@ const About: NextPage = () => {
         <AboutMe>
           <h2>About me</h2>
           <p>
-            Hello! I'm Brenda Matias, a computer engineer, who likes to build things for the internet. I graduated in
-            2019.2 at Maurício de Nassau University.
+            Hello! I&apos;m Brenda Matias, a computer engineer, who likes to build things for the internet. I graduated
+            in 2019.2 at Maurício de Nassau University.
           </p>
           <p>
-            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took.
+            Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer
+            took.
           </p>
 
           <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-            industry's standard dummy text.
+            industry&apos;s standard dummy text.
           </p>
-          <p>Here are a few technologies I’ve been working with recently:</p>
+          <p>Here are a few technologies I&apos;ve been working with recently:</p>
         </AboutMe>
 
         <ul>
