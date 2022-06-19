@@ -15,6 +15,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       background: {
         primary: '#fff',
         secondary: '#f6f7f9',
+        tertiary: '#0D1117',
       },
     },
   };
