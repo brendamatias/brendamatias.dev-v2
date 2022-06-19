@@ -27,23 +27,25 @@ const Projects: NextPage = () => (
       </Info>
 
       <Slider>
-        <Image src={project} alt="Project" />
+        <div className="img">
+          <Image src={project} alt="Project" />
 
-        <div className="timeline">
-          <div />
-          <div className="active" />
-          <div />
-          <div />
-        </div>
+          <div className="timeline">
+            <div />
+            <div className="active" />
+            <div />
+            <div />
+          </div>
 
-        <div className="buttons">
-          <button type="button">
-            <MdChevronLeft />
-          </button>
+          <div className="buttons">
+            <button type="button">
+              <MdChevronLeft />
+            </button>
 
-          <button type="button">
-            <MdChevronRight />
-          </button>
+            <button type="button">
+              <MdChevronRight />
+            </button>
+          </div>
         </div>
       </Slider>
     </div>

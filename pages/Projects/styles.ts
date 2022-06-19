@@ -6,11 +6,24 @@ export const Container = styled.section`
 
   > div {
     display: flex;
+    flex-wrap: wrap;
+
+    @media (max-width: 480px) {
+      flex-direction: column;
+      gap: 2rem;
+    }
+
     gap: 4rem;
     padding: 5rem 2rem;
 
-    img {
-      border-radius: 0.875rem;
+    .img {
+      position: relative;
+      min-width: 300px;
+      max-width: 420px;
+
+      img {
+        border-radius: 0.5rem;
+      }
     }
   }
 `;
@@ -43,6 +56,10 @@ export const Info = styled.div`
       font-size: 0.875rem;
       line-height: 1.5rem;
       font-weight: 500;
+
+      @media (max-width: 480px) {
+        width: 100%;
+      }
     }
 
     .btn {
@@ -58,6 +75,11 @@ export const Info = styled.div`
       font-weight: 500;
       color: ${theme.colors.gray};
       transition: all 0.3s linear;
+
+      @media (max-width: 480px) {
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
 
       &:hover {
         background: ${theme.colors.primary};
@@ -78,8 +100,8 @@ export const Slider = styled.div`
       gap: 8px;
       margin-bottom: 1rem;
       position: absolute;
-      left: 2rem;
-      bottom: -0.5rem;
+      left: 20px;
+      bottom: -2rem;
 
       > div {
         display: block;
@@ -98,8 +120,8 @@ export const Slider = styled.div`
       display: flex;
       justify-content: space-between;
       position: absolute;
-      bottom: 1rem;
-      right: 50px;
+      bottom: -0.8rem;
+      right: 20px;
       align-items: center;
       padding: 0.7rem 1.5rem;
       width: 10rem;
