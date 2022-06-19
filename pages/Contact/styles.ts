@@ -9,6 +9,11 @@ export const Container = styled.section`
       margin: 0 auto;
       display: flex;
       justify-content: space-between;
+
+      @media (max-width: 480px) {
+        flex-direction: column;
+      }
+
       gap: 4rem;
       padding: 5rem 2rem;
 
@@ -24,10 +29,19 @@ export const Info = styled.div`
     display: flex;
     gap: 3rem;
 
+    @media (max-width: 480px) {
+      gap: 0;
+    }
+
     > div {
       > h1 {
         font-size: 2.5rem;
         color: ${theme.colors.gray};
+
+        @media (max-width: 480px) {
+          font-size: 1.875rem;
+          margin-left: 2rem;
+        }
       }
 
       > p {
@@ -70,6 +84,10 @@ export const Info = styled.div`
         height: 8rem;
         border-radius: 10px;
         background-color: ${theme.colors.primary_light};
+
+        @media (max-width: 480px) {
+          height: 6rem;
+        }
       }
     }
   `};
@@ -77,10 +95,6 @@ export const Info = styled.div`
 
 export const Form = styled.form`
   ${({ theme }) => css`
-    > input {
-      margin-bottom: 1rem;
-    }
-
     > button {
       margin-top: 1.5rem;
       padding: 0.5rem 3rem;
