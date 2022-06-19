@@ -6,22 +6,19 @@ export const Container = styled.section`
     display: flex;
     align-items: center;
     justify-content: center;
-    height: calc(100vh - 105px);
-  `}
-`;
+    height: calc(100vh - 114px);
+    position: relative;
 
-export const Content = styled.div`
-  ${({ theme }) => css`
-    margin: 0 auto;
-    width: 100%;
-    max-width: 1100px;
-    padding: 2rem;
+    @media (max-width: 900px) {
+      background: linear-gradient(-45deg, ${theme.colors.primary_light} 30%, ${theme.colors.white} 60%);
+      height: 100vh;
+    }
 
     .image {
       width: 900px;
-      height: 900px;
+      height: 100%;
       position: absolute;
-      bottom: 105px;
+      bottom: 0;
       right: 1%;
 
       > div {
@@ -29,14 +26,28 @@ export const Content = styled.div`
         height: 100%;
         position: relative;
       }
+
+      @media (max-width: 480px) {
+        width: 100%;
+        height: 40%;
+        right: 0;
+      }
     }
+  `}
+`;
+
+export const Content = styled.div`
+  ${({ theme }) => css`
+    z-index: 999;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1100px;
+    padding: 2rem;
   `}
 `;
 
 export const Description = styled.div`
   ${({ theme }) => css`
-    z-index: 2;
-
     > span {
       display: inline-block;
       text-transform: uppercase;
@@ -66,6 +77,11 @@ export const Description = styled.div`
       flex-direction: column;
       margin-top: 5rem;
       margin-bottom: 2rem;
+
+      @media (max-width: 480px) {
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+      }
 
       > span {
         display: flex;

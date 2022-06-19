@@ -16,6 +16,10 @@ export const Container = styled.div`
       justify-content: space-between;
       gap: 4rem;
 
+      @media (max-width: 650px) {
+        grid-template-columns: 1fr;
+      }
+
       > ul {
         > li:not(:last-child) {
           margin-bottom: 1rem;
@@ -98,6 +102,10 @@ export const AboutMe = styled.div`
       max-width: 30rem;
       color: ${theme.colors.gray_medium};
       margin-top: 1rem;
+
+      @media (max-width: 650px) {
+        max-width: 100%;
+      }
     }
   `};
 `;
