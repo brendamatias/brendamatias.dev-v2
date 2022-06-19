@@ -1,15 +1,17 @@
 import styled from 'styled-components';
 
 export const Container = styled.header`
+  background: linear-gradient(90deg, #fff 70%, #fff0fc 40%);
+
   > nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
     padding: 2rem;
-    position: fixed;
-    background-color: #fff;
     max-width: 1100px;
+    margin: 0 auto;
+    z-index: 999;
   }
 
   > .icons {

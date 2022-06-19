@@ -12,10 +12,10 @@ const Header: NextPage = () => {
 
   return (
     <Container>
-      <div className="icons">
+      {/* <div className="icons">
         <BsMouse />
         <IoIosArrowRoundDown />
-      </div>
+      </div> */}
       <nav>
         <Image src={logo} alt="Brenda Matias Logo" />
 
@@ -28,7 +28,7 @@ const Header: NextPage = () => {
             </li>
           ))}
           <li>
-            <button type="button">
+            <button type="button" className="button">
               resume <MdOutlineArrowForward />
             </button>
           </li>
