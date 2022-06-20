@@ -3,8 +3,8 @@ import type { NextPage } from 'next';
 import { MdOutlineEmail } from 'react-icons/md';
 import { Container, Info, Form } from './styles';
 
-const Projects: NextPage = () => (
-  <Container>
+const Contact: NextPage = () => (
+  <Container id="contact">
     <div>
       <Info>
         <div className="emailIconContainer">
@@ -45,4 +45,4 @@ const Projects: NextPage = () => (
   </Container>
 );
 
-export default Projects;
+export default Contact;

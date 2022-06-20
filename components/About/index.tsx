@@ -10,24 +10,24 @@ const About: NextPage = () => {
     },
     {
       label: 'React',
-      percentage: 30,
+      percentage: 80,
     },
     {
       label: 'Node.js',
-      percentage: 50,
+      percentage: 80,
     },
     {
       label: 'TypeScript',
-      percentage: 98,
+      percentage: 70,
     },
     {
       label: 'HTML / CSS',
-      percentage: 98,
+      percentage: 90,
     },
   ];
 
   return (
-    <Container>
+    <Container id="about">
       <div>
         <AboutMe>
           <h2>About me</h2>

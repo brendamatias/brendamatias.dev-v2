@@ -6,7 +6,7 @@ import { Container, Info, Slider } from './styles';
 import project from '../../assets/project.jpg';
 
 const Projects: NextPage = () => (
-  <Container>
+  <Container id="projects">
     <div>
       <Info>
         <span>#02</span>

@@ -1,31 +1,32 @@
 import styled, { css } from 'styled-components';
 
 export const Container = styled.section`
-  max-width: 1100px;
-  margin: 0 auto;
-
-  > div {
-    display: grid;
-    width: 100%;
-    gap: 4rem;
-    padding: 5rem 2rem;
-    grid-template-columns: repeat(auto-fill, 486px);
-
-    @media (max-width: 560px) {
-      grid-template-columns: 1fr;
-      gap: 2rem;
-    }
-
-    .img {
-      position: relative;
+  ${() => css`
+    > div {
+      display: grid;
       width: 100%;
+      gap: 4rem;
+      padding: 5rem 2rem;
+      max-width: 1100px;
+      margin: 0 auto;
+      grid-template-columns: repeat(auto-fill, 486px);
 
-      img {
-        border-radius: 0.5rem;
-        width: 100% !important;
+      @media (max-width: 560px) {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+
+      .img {
+        position: relative;
+        width: 100%;
+
+        img {
+          border-radius: 0.5rem;
+          width: 100% !important;
+        }
       }
     }
-  }
+  `}
 `;
 
 export const Info = styled.div`
