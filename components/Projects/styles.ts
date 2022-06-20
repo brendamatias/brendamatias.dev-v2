@@ -5,24 +5,24 @@ export const Container = styled.section`
   margin: 0 auto;
 
   > div {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    width: 100%;
+    gap: 4rem;
+    padding: 5rem 2rem;
+    grid-template-columns: repeat(auto-fill, 486px);
 
-    @media (max-width: 480px) {
-      flex-direction: column;
+    @media (max-width: 560px) {
+      grid-template-columns: 1fr;
       gap: 2rem;
     }
 
-    gap: 4rem;
-    padding: 5rem 2rem;
-
     .img {
       position: relative;
-      min-width: 300px;
-      max-width: 420px;
+      width: 100%;
 
       img {
         border-radius: 0.5rem;
+        width: 100% !important;
       }
     }
   }
@@ -57,7 +57,7 @@ export const Info = styled.div`
       line-height: 1.5rem;
       font-weight: 500;
 
-      @media (max-width: 480px) {
+      @media (max-width: 560px) {
         width: 100%;
       }
     }
@@ -76,7 +76,7 @@ export const Info = styled.div`
       color: ${theme.colors.gray};
       transition: all 0.3s linear;
 
-      @media (max-width: 480px) {
+      @media (max-width: 560px) {
         margin-top: 20px;
         margin-bottom: 20px;
       }

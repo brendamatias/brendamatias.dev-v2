@@ -19,6 +19,11 @@ export const Container = styled.footer`
         align-items: center;
         gap: 20px;
       }
+
+      @media (max-width: 470px) {
+        flex-direction: column;
+        gap: 1rem;
+      }
     }
   `};
 `;
