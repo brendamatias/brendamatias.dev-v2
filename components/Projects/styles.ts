@@ -4,6 +4,7 @@ export const Container = styled.section`
   ${() => css`
     > div {
       display: grid;
+      align-items: flex-end;
       width: 100%;
       gap: 4rem;
       padding: 5rem 2rem;
@@ -36,6 +37,7 @@ export const Info = styled.div`
       margin-bottom: 0.5rem;
       color: ${theme.colors.primary};
       font-weight: 600;
+      margin-top: 1rem;
     }
 
     > h1 {

@@ -30,19 +30,16 @@ const About: NextPage = () => {
     <Container id="about">
       <div>
         <AboutMe>
-          <h2>About me</h2>
+          <h2 className="title-section">About me</h2>
+          <p>Hello! I&apos;m Brenda Matias, a computer engineer who loves to turn dream into code lines</p>
           <p>
-            Hello! I&apos;m Brenda Matias, a computer engineer, who likes to build things for the internet. I graduated
-            in 2019.2 at Maurício de Nassau University.
-          </p>
-          <p>
-            Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer
-            took.
+            I have skills and experience with Java, JavaScript, React, Node.js, Delphi, Adonis Js, Vue.js, Oracle SQL,
+            Mongo DB, Postgres and SQL Server.
           </p>
 
           <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-            industry&apos;s standard dummy text.
+            I am a Front-End lover, where I always seek to learn and enhance my skills in this development modality,
+            also proficient on projects that requires skills on Back-End development modalities.
           </p>
           <p>Here are a few technologies I&apos;ve been working with recently:</p>
         </AboutMe>

@@ -13,25 +13,6 @@ export const Container = styled.div`
         display: flex;
         justify-content: center;
 
-        > h2 {
-          display: inline-block;
-          position: relative;
-          color: ${theme.colors.gray};
-          margin-bottom: 4rem;
-
-          &::after {
-            position: absolute;
-            bottom: -8px;
-            left: 0;
-            content: '';
-            width: 100%;
-            height: 4px;
-            border-radius: 99999px;
-            background-color: ${theme.colors.primary};
-            transform: rotate(-1deg);
-          }
-        }
-
         @media screen and (max-width: 768px) {
           justify-content: flex-start;
         }

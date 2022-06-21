@@ -15,7 +15,7 @@ export const Container = styled.section`
     }
 
     .image {
-      width: 900px;
+      width: 800px;
       height: 100%;
       position: absolute;
       bottom: 0;
@@ -72,9 +72,12 @@ export const Description = styled.div`
       color: ${theme.colors.primary};
     }
 
+    a {
+      display: inline-block;
+      transition: all 0.3s;
+    }
+
     > div {
-      display: flex;
-      flex-direction: column;
       margin-top: 5rem;
       margin-bottom: 2rem;
 
@@ -83,18 +86,22 @@ export const Description = styled.div`
         margin-bottom: 1rem;
       }
 
-      > span {
-        display: flex;
+      > a {
+        display: inline-block;
         align-items: center;
         gap: 6px;
         margin-bottom: 0.5rem;
+
+        &:hover {
+          color: ${theme.colors.primary};
+        }
       }
 
       > ul {
         display: flex;
         align-items: center;
         gap: 10px;
-        margin-bottom: 1rem;
+        margin-bottom: 4rem;
 
         > li {
           cursor: pointer;

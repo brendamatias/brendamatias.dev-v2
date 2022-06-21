@@ -17,9 +17,9 @@ const Intro: NextPage = () => (
         <h2>Web Developer</h2>
 
         <div>
-          <span>
+          <a href="mailto:brendamatias.sobral@gmail.com">
             <MdOutlineMail /> brendamatias.sobral@gmail.com
-          </span>
+          </a>
 
           <ul>
             <li>
@@ -44,9 +44,9 @@ const Intro: NextPage = () => (
             </li>
           </ul>
         </div>
-        <button type="button" className="button">
+        <a href="#projects" className="button">
           see my projects
-        </button>
+        </a>
       </Description>
     </Content>
 

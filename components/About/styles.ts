@@ -79,25 +79,6 @@ export const Container = styled.div`
 
 export const AboutMe = styled.div`
   ${({ theme }) => css`
-    > h2 {
-      display: inline-block;
-      position: relative;
-      color: ${theme.colors.gray};
-      margin-bottom: 2rem;
-
-      &::after {
-        position: absolute;
-        bottom: -8px;
-        left: 0;
-        content: '';
-        width: 100%;
-        height: 4px;
-        border-radius: 99999px;
-        background-color: ${theme.colors.primary};
-        transform: rotate(-1deg);
-      }
-    }
-
     > p {
       max-width: 30rem;
       color: ${theme.colors.gray_medium};

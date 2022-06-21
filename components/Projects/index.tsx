@@ -9,19 +9,21 @@ const Projects: NextPage = () => (
   <Container id="projects">
     <div>
       <Info>
+        <h2 className="title-section">Projects</h2>
+
         <span>#02</span>
 
         <h1>Roda Acessível</h1>
         <p>Lorem ipsum is lorem ipsum is lorem</p>
 
-        <strong>sobre o projeto</strong>
+        <strong>about the project</strong>
         <p>
           Iam trusted my company in allies and the results have been satisfying because my companyhas growing. Iam
           trusted my company in allies and the results have been satisfying because my company has growing.
         </p>
 
         <a href="#teste" className="btn">
-          ver projeto
+          see project
           <MdOutlineArrowForward />
         </a>
       </Info>
