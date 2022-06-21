@@ -8,7 +8,7 @@ const Experience: NextPage = () => {
       company: 'ThoughtWorks',
       role: 'Software Developer Consultant',
       description:
-        'Part of the Thoughtworks team as a consulting developer providing services to partner companies. Currently working at the partner company Globo with Javascript technology in the media player for the Player Web and TV platforms (eg Tizen, WebOS).',
+        'Part of the Thoughtworks team as a consulting developer providing services to partner companies. Currently working at the partner company Globo with Javascript technology in the media player for the Player Web and TV platforms (eg Tizen, WebOS)',
       time: 'Apr 2021 - Present',
     },
     {
@@ -22,7 +22,7 @@ const Experience: NextPage = () => {
       company: 'Mesa Mobile Thinking',
       role: 'Full-Stack Enginner',
       description:
-        'As a Full Stack Engineer I participated in projects in the areas of retail (Dashboard project), healthcare (Dashboard and public content area). Using tools like AdonisJs, PostgreSQL and SQL Server for backend development, Vue.Js for frontend development, Gitlab for versioning and Heroku for deploy in an agile environment with Scrum as the methodology.',
+        'As a Full Stack Engineer I participated in projects in the areas of retail (Dashboard project), healthcare (Dashboard and public content area). Using tools like AdonisJs, PostgreSQL and SQL Server for backend development, Vue.Js for frontend development, Gitlab for versioning and Heroku for deploy in an agile environment with Scrum as the methodology',
       time: 'Mar 2020 - Feb 2022',
     },
     {

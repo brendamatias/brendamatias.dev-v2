@@ -34,15 +34,15 @@ const Header: NextPage = () => {
             <ul className={`${isOpenMenu && 'visible'}`}>
               {links.map((link, index) => (
                 <li key={link}>
-                  <a href={`#${link}`} className={`${index === 0 && 'active'}`}>
+                  <a href={`#${link}`} className={`${index === 0 && 'active'} link`}>
                     <strong>0{index + 1}.</strong> {link}
                   </a>
                 </li>
               ))}
               <li>
-                <button type="button" className="button">
+                <a href="/curriculum.pdf" target="_blank" rel="noreferrer" className="button">
                   resume <MdOutlineArrowForward />
-                </button>
+                </a>
               </li>
             </ul>
           </Nav>

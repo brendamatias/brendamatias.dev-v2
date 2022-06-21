@@ -51,7 +51,7 @@ export const Nav = styled.div`
       gap: 2rem;
 
       > li {
-        > a {
+        > .link {
           color: #222222;
           border-bottom: 3px solid transparent;
           padding-bottom: 8px;
