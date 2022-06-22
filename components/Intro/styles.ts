@@ -6,12 +6,11 @@ export const Container = styled.section`
     display: flex;
     align-items: center;
     justify-content: center;
-    height: calc(100vh - 114px);
+    height: 100vh;
     position: relative;
 
     @media (max-width: 900px) {
       background: linear-gradient(-45deg, ${theme.colors.primary_light} 30%, ${theme.colors.white} 60%);
-      height: 100vh;
     }
 
     .image {

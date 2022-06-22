@@ -1,8 +1,9 @@
 import styled, { css } from 'styled-components';
 
 export const Container = styled.header`
-  background: linear-gradient(90deg, #fff 70%, #fff0fc 40%);
   width: 100%;
+  position: fixed;
+  z-index: 99999;
 
   @media (max-width: 900px) {
     position: fixed;
@@ -13,7 +14,7 @@ export const Container = styled.header`
   > div {
     max-width: 1100px;
     margin: 0 auto;
-    padding: 2rem;
+    padding: 1.5rem 2rem;
     z-index: 999;
     position: relative;
 
@@ -40,6 +41,11 @@ export const Container = styled.header`
       max-width: 1100px;
       bottom: 4rem;
     }
+  }
+
+  &.headerScroll {
+    background-color: #fff;
+    box-shadow: 0 2px 2px -2px rgb(0 0 0 / 15%);
   }
 `;
 
@@ -107,22 +113,6 @@ export const Nav = styled.div`
       .visible {
         display: flex;
       }
-      /* &::after {
-      content: 'X';
-    } */
-
-      /* display: none; */
-      /* position: absolute;
-    align-items: flex-end;
-    flex-direction: column;
-    top: 84px;
-    right: 32px;
-    background-color: #fff;
-    font-size: 0.875rem;
-    transition: 0.3s;
-
-    > li {
-    } */
     }
   `}
 `;
