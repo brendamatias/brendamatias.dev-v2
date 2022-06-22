@@ -1,57 +1,69 @@
+/* eslint-disable global-require */
+/* eslint-disable import/no-dynamic-require */
 import type { NextPage } from 'next';
 import Image from 'next/image';
 
 import { MdOutlineArrowForward, MdChevronLeft, MdChevronRight } from 'react-icons/md';
+import { useState } from 'react';
 import { Container, Info, Slider } from './styles';
-import project from '../../assets/project.jpg';
 
-const Projects: NextPage = () => (
-  <Container id="projects">
-    <div>
-      <Info>
-        <h2 className="title-section">Projects</h2>
+import projects from './projects.json';
 
-        <span>#02</span>
+const Projects: NextPage = () => {
+  const [project, setProject] = useState(0);
 
-        <h1>Roda Acessível</h1>
-        <p>Lorem ipsum is lorem ipsum is lorem</p>
+  const handleProject = (value: number) => {
+    const currentValue = project + value;
+    if (currentValue >= projects.length) return setProject(0);
+    if (currentValue < 0) return setProject(projects.length - 1);
 
-        <strong>about the project</strong>
-        <p>
-          Iam trusted my company in allies and the results have been satisfying because my companyhas growing. Iam
-          trusted my company in allies and the results have been satisfying because my company has growing.
-        </p>
+    return setProject(currentValue);
+  };
+  const getImage = (imageName: string) => require(`../../assets/${imageName}`);
 
-        <a href="#teste" className="btn">
-          see project
-          <MdOutlineArrowForward />
-        </a>
-      </Info>
+  return (
+    <Container id="projects">
+      <div>
+        <Info>
+          <h2 className="title-section">Projects</h2>
 
-      <Slider>
-        <div className="img">
-          <Image src={project} alt="Project" />
+          <span>#02</span>
 
-          <div className="timeline">
-            <div />
-            <div className="active" />
-            <div />
-            <div />
+          <h1>{projects[project].title}</h1>
+          <p>{projects[project].subtitle}</p>
+
+          <strong>about the project</strong>
+          <p>{projects[project].description}</p>
+
+          <a href={projects[project].url} className="btn">
+            see project
+            <MdOutlineArrowForward />
+          </a>
+        </Info>
+
+        <Slider>
+          <div className="img">
+            <Image src={getImage(projects[project].image)} alt="Project" />
+
+            <div className="timeline">
+              {[...Array(projects.length)].map((_, index) => (
+                <div key={index} className={`${project === index && 'active'}`} />
+              ))}
+            </div>
+            <div className="buttons">
+              <button type="button" onClick={() => handleProject(-1)}>
+                <MdChevronLeft />
+              </button>
+
+              <button type="button" onClick={() => handleProject(+1)}>
+                <MdChevronRight />
+              </button>
+            </div>
           </div>
-
-          <div className="buttons">
-            <button type="button">
-              <MdChevronLeft />
-            </button>
-
-            <button type="button">
-              <MdChevronRight />
-            </button>
-          </div>
-        </div>
-      </Slider>
-    </div>
-  </Container>
-);
+        </Slider>
+      </div>
+    </Container>
+  );
+};
 
 export default Projects;

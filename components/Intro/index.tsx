@@ -52,7 +52,7 @@ const Intro: NextPage = () => (
 
     <div className="image">
       <div>
-        <Image alt="Brenda Matias" src={profile} layout="fill" objectFit="cover" quality="100%" />
+        <Image alt="Brenda Matias" priority src={profile} layout="fill" objectFit="cover" quality="100%" />
       </div>
     </div>
   </Container>

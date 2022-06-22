@@ -126,7 +126,6 @@ export const Slider = styled.div`
       bottom: -0.8rem;
       right: 20px;
       align-items: center;
-      padding: 0.7rem 1.5rem;
       width: 10rem;
       gap: 2rem;
       background-color: ${theme.colors.primary};
@@ -137,6 +136,12 @@ export const Slider = styled.div`
         justify-content: center;
         font-size: 1.2rem;
         color: ${theme.colors.white};
+      }
+
+      button {
+        width: 100%;
+        height: 100%;
+        padding: 0.7rem 1.5rem;
       }
     }
   `};
