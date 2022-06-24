@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components';
+import styled, { css, keyframes } from 'styled-components';
 
 export const Container = styled.div`
   ${({ theme }) => css`
@@ -32,46 +32,6 @@ export const Container = styled.div`
             margin-bottom: 0.5rem;
             color: ${theme.colors.text};
           }
-
-          > .skill-bar {
-            position: relative;
-            background-color: ${theme.colors.text_light};
-            border-radius: 2px;
-            width: 100%;
-            height: 12px;
-            transition: ease all 0.55s;
-
-            > .skill-bar-in {
-              position: absolute;
-              top: 0;
-              height: 100%;
-              width: 100%;
-              border-top-left-radius: 2px;
-              border-bottom-left-radius: 2px;
-              background-color: ${theme.colors.primary};
-
-              > span {
-                position: absolute;
-                right: 0;
-                bottom: 20px;
-                background: ${theme.colors.text};
-                padding: 3px 8px;
-                color: ${theme.colors.text_light};
-                font-size: 10px;
-                font-weight: 600;
-                border-radius: 8px 8px 0 8px;
-
-                &::after {
-                  content: '';
-                  position: absolute;
-                  bottom: -11px;
-                  right: 0;
-                  border-left: 10px solid transparent;
-                  border-top: 12px solid ${theme.colors.text};
-                }
-              }
-            }
-          }
         }
       }
     }
@@ -90,4 +50,61 @@ export const AboutMe = styled.div`
       }
     }
   `};
+`;
+
+type SkillBarProps = {
+  width: number;
+};
+
+const progressBar = (width: number) => keyframes`
+  0% {
+    width: 0;
+  }
+  100% {
+    width: ${width}%;
+  }
+`;
+
+export const SkillBar = styled.div<SkillBarProps>`
+  ${({ theme, width }) => css`
+    position: relative;
+    background-color: ${theme.colors.text_light};
+    border-radius: 2px;
+    width: 100%;
+    height: 12px;
+    transition: ease all 0.55s;
+
+    > .skill-bar-in {
+      position: absolute;
+      top: 0;
+      height: 100%;
+      width: ${width}%;
+      border-top-left-radius: 2px;
+      border-bottom-left-radius: 2px;
+      background-color: ${theme.colors.primary};
+      animation-fill-mode: both;
+      animation: ${progressBar(width)} 3s ease-in-out;
+
+      > span {
+        position: absolute;
+        right: 0;
+        bottom: 20px;
+        background: ${theme.colors.text};
+        padding: 3px 8px;
+        color: ${theme.colors.text_light};
+        font-size: 10px;
+        font-weight: 600;
+        border-radius: 8px 8px 0 8px;
+
+        &::after {
+          content: '';
+          position: absolute;
+          bottom: -11px;
+          right: 0;
+          border-left: 10px solid transparent;
+          border-top: 12px solid ${theme.colors.text};
+        }
+      }
+    }
+  `}
 `;

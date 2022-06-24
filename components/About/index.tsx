@@ -1,6 +1,6 @@
 import type { NextPage } from 'next';
 
-import { Container, AboutMe } from './styles';
+import { Container, AboutMe, SkillBar } from './styles';
 
 const About: NextPage = () => {
   const skills = [
@@ -49,11 +49,11 @@ const About: NextPage = () => {
             <li key={label}>
               <span>{label}</span>
 
-              <div className="skill-bar">
-                <div className="skill-bar-in" style={{ width: `${percentage}%` }}>
+              <SkillBar width={percentage}>
+                <div className="skill-bar-in">
                   <span>{percentage}%</span>
                 </div>
-              </div>
+              </SkillBar>
             </li>
           ))}
         </ul>
