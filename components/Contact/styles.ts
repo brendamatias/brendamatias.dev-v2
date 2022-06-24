@@ -46,7 +46,7 @@ export const Info = styled.div`
 
         > h1 {
           font-size: 2.5rem;
-          color: ${theme.colors.gray};
+          color: ${theme.colors.text};
           max-width: 30rem;
           text-align: center;
 
@@ -71,7 +71,7 @@ export const Info = styled.div`
             border-radius: 50%;
             right: -18px;
             top: -1px;
-            box-shadow: 10px 20px 20px #dedede;
+            box-shadow: 10px 20px 20px ${theme.colors.shadow};
 
             svg {
               z-index: 3;
@@ -101,7 +101,7 @@ export const Info = styled.div`
         font-size: 1rem;
         max-width: 45rem;
         text-align: center;
-        color: ${theme.colors.gray_medium};
+        color: ${theme.colors.text_medium};
       }
     }
   `};

@@ -2,7 +2,11 @@ import styled, { css } from 'styled-components';
 
 export const Container = styled.section`
   ${({ theme }) => css`
-    background: linear-gradient(90deg, ${theme.colors.white} 70%, ${theme.colors.primary_light} 40%);
+    background: linear-gradient(
+      90deg,
+      ${theme.colors.background.primary} 70%,
+      ${theme.colors.background.primary_light} 40%
+    );
     display: flex;
     align-items: center;
     justify-content: center;
@@ -10,7 +14,11 @@ export const Container = styled.section`
     position: relative;
 
     @media (max-width: 900px) {
-      background: linear-gradient(-45deg, ${theme.colors.primary_light} 30%, ${theme.colors.white} 60%);
+      background: linear-gradient(
+        -45deg,
+        ${theme.colors.background.primary_light} 30%,
+        ${theme.colors.background.primary} 60%
+      );
     }
 
     .image {
@@ -54,6 +62,7 @@ export const Description = styled.div`
       font-size: 0.875rem;
       font-weight: 500;
       position: relative;
+      color: ${theme.colors.text};
 
       &:after {
         display: block;
@@ -67,13 +76,21 @@ export const Description = styled.div`
       }
     }
 
+    > h1 {
+      color: ${theme.colors.text};
+    }
+
     > h2 {
       color: ${theme.colors.primary};
     }
 
     a {
       display: inline-block;
-      transition: all 0.3s;
+      color: ${theme.colors.text};
+    }
+
+    .button {
+      color: #fff;
     }
 
     > div {
@@ -105,12 +122,8 @@ export const Description = styled.div`
         > li {
           cursor: pointer;
 
-          a {
-            transition: all 0.3s;
-
-            &:hover {
-              color: ${theme.colors.primary};
-            }
+          a:hover {
+            color: ${theme.colors.primary};
           }
         }
       }

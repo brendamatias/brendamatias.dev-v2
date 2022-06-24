@@ -30,11 +30,12 @@ export const Container = styled.div`
             display: block;
             font-size: 0.875rem;
             margin-bottom: 0.5rem;
+            color: ${theme.colors.text};
           }
 
           > .skill-bar {
             position: relative;
-            background-color: ${theme.colors.gray_light};
+            background-color: ${theme.colors.text_light};
             border-radius: 2px;
             width: 100%;
             height: 12px;
@@ -53,9 +54,9 @@ export const Container = styled.div`
                 position: absolute;
                 right: 0;
                 bottom: 20px;
-                background: ${theme.colors.gray};
+                background: ${theme.colors.text};
                 padding: 3px 8px;
-                color: #fff;
+                color: ${theme.colors.text_light};
                 font-size: 10px;
                 font-weight: 600;
                 border-radius: 8px 8px 0 8px;
@@ -66,7 +67,7 @@ export const Container = styled.div`
                   bottom: -11px;
                   right: 0;
                   border-left: 10px solid transparent;
-                  border-top: 12px solid ${theme.colors.gray};
+                  border-top: 12px solid ${theme.colors.text};
                 }
               }
             }
@@ -81,7 +82,7 @@ export const AboutMe = styled.div`
   ${({ theme }) => css`
     > p {
       max-width: 30rem;
-      color: ${theme.colors.gray_medium};
+      color: ${theme.colors.text_medium};
       margin-top: 1rem;
 
       @media (max-width: 650px) {

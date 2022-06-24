@@ -34,7 +34,7 @@ export const Timeline = styled.div`
       margin-left: -1px;
       width: 2px;
       height: 100%;
-      background: ${theme.colors.gray_light};
+      background: ${theme.colors.text_light};
       z-index: 1;
     }
 
@@ -67,7 +67,7 @@ export const Timeline = styled.div`
     .timeline-content {
       width: 95%;
       padding: 0 1rem;
-      color: ${theme.colors.gray};
+      color: ${theme.colors.text};
 
       > h3 {
         margin-top: 5px;
@@ -85,7 +85,7 @@ export const Timeline = styled.div`
       p {
         font-size: 14px;
         line-height: 1.5em;
-        color: ${theme.colors.gray_medium};
+        color: ${theme.colors.text_medium};
       }
     }
 

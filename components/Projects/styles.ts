@@ -1,7 +1,9 @@
 import styled, { css } from 'styled-components';
 
 export const Container = styled.section`
-  ${() => css`
+  ${({ theme }) => css`
+    background-color: ${theme.colors.background.primary};
+
     > div {
       display: grid;
       align-items: flex-end;
@@ -43,19 +45,19 @@ export const Info = styled.div`
     > h1 {
       font-size: 2.7rem;
       font-weight: 600;
-      color: ${theme.colors.gray};
+      color: ${theme.colors.text};
     }
 
     strong {
       display: block;
       margin-top: 2rem;
       font-size: 1.5rem;
-      color: ${theme.colors.gray};
+      color: ${theme.colors.text};
     }
 
     p {
       width: 30rem;
-      color: ${theme.colors.gray_medium};
+      color: ${theme.colors.text_medium};
       font-size: 0.875rem;
       line-height: 1.5rem;
       font-weight: 500;
@@ -76,7 +78,7 @@ export const Info = styled.div`
       letter-spacing: 0.3px;
       padding: 10px 0;
       font-weight: 500;
-      color: ${theme.colors.gray};
+      color: ${theme.colors.text};
       transition: all 0.3s linear;
 
       @media (max-width: 560px) {
@@ -111,7 +113,7 @@ export const Slider = styled.div`
         width: 0.7rem;
         height: 0.7rem;
         border-radius: 50%;
-        background-color: ${theme.colors.gray_light};
+        background-color: ${theme.colors.text_light};
       }
 
       & .active {

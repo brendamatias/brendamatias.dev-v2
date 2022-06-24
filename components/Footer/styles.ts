@@ -18,6 +18,12 @@ export const Container = styled.footer`
         display: flex;
         align-items: center;
         gap: 20px;
+
+        a {
+          &:hover {
+            color: ${theme.colors.primary};
+          }
+        }
       }
 
       @media (max-width: 470px) {
